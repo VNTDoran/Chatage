@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Age</title>
+</head>
+<body>
+    <p id="ageResponse">Your random age will appear here.</p>
+    <button id="generateAgeButton">Generate Random Age</button>
+
+    <script>
+        document.getElementById("generateAgeButton").addEventListener("click", function() {
+            var randomAge = Math.floor(Math.random() * 82) + 18; // Generate age between 18 and 99
+            document.getElementById("ageResponse").textContent = "Your random age is " + randomAge;
+        });
+    </script>
+</body>
+</html>
